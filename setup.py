@@ -5,9 +5,14 @@ from setuptools import setup, find_packages
 #         return [line.strip() for line in f.readlines()]
 
 setup(
-    name='sphinx-theme',
+    name='sphinx-reafferent',
     version='0.0.1',
-    packages=['sphinx-theme'],
+    packages=['sphinx-reafferent'],
+    package_data={
+        'sphinx-reafferent': [
+            'static/sphinx-reafferent.css',
+        ],
+    },
     # install_requires=install_requires(),
     install_requires=[],
     classifiers=[],

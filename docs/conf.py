@@ -1,9 +1,9 @@
-project = 'sphinx-theme'
+project = 'sphinx-reafferent'
 copyright = '<YEAR>, <NAME>'
 author = '<NAME>'
 release = '0.0.1'
 extensions = [
-    'sphinx-theme'
+    'sphinx-reafferent'
 ]
 templates_path = ['_templates']
 exclude_patterns = [
@@ -11,4 +11,4 @@ exclude_patterns = [
     'build.sh',
     'venv', 
 ]
-html_theme = 'sphinx-theme'
+html_theme = 'sphinx-reafferent'
