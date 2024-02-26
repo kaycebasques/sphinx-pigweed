@@ -1,4 +1,33 @@
 body {
     font-family: sans-serif;
-    background-color: pink;
+    display: grid;
+    grid-template-areas:
+        "header  header  header"
+        "sitenav content pagenav"
+        "footer  footer  footer";
+}
+
+.content {
+    grid-area: content;
+    background-color: lightgreen;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lightyellow;
+}
+
+header {
+    grid-area: header;
+    background-color: lightpink;
+}
+
+.pagenav {
+    grid-area: pagenav;
+    background-color: lightgrey;
+}
+
+.sitenav {
+    grid-area: sitenav;
+    background-color: lightblue;
 }
