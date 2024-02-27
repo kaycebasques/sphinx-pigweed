@@ -2,9 +2,16 @@ body {
     font-family: sans-serif;
     display: grid;
     grid-template-areas:
+        "banner  banner  banner"
         "header  header  header"
         "sitenav content pagenav"
         "footer  footer  footer";
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    grid-area: banner;
 }
 
 .content {
@@ -20,11 +27,23 @@ footer {
 header {
     grid-area: header;
     background-color: lightpink;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .pagenav {
     grid-area: pagenav;
     background-color: lightgrey;
+}
+
+#search {
+    flex: 0 0 auto;
+    transition: all 0.3s ease-in-out;
+}
+
+#search:focus { 
+    flex: 1 1 auto;
 }
 
 .sitenav {

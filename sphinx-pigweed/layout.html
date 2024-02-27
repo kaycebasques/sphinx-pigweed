@@ -7,9 +7,20 @@
               href="{{ pathto('_static/sphinx-pigweed.css', 1) }}">
     </head>
     <body>
-        <header><span>{{ project }}</span></header>
+        {% if pw_banner_text %}
+        <aside>{{ pw_banner_text }}</aside>
+        {% endif %}
+        <header>
+            <span id="logo">{{ project }}</span>
+            <input id="search" type="text" placeholder="Search"/>
+        </header>
         <nav class="sitenav">sitenav</nav>
-        <nav class="pagenav">pagenav</nav>
+        <nav class="pagenav">
+            <p>{{ pw_pagenav_label }}</p>
+            <ul>
+                <li>todo</li>
+            </ul>
+        </nav>
         <section class="content">{% block body %}{% endblock %}</section>
         <footer>footer</footer>
     </body>
