@@ -1,4 +1,4 @@
-# sphinx-reafferent
+# sphinx-pigweed
 
 ## references
 

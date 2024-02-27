@@ -5,12 +5,12 @@ from setuptools import setup, find_packages
 #         return [line.strip() for line in f.readlines()]
 
 setup(
-    name='sphinx-reafferent',
+    name='sphinx-pigweed',
     version='0.0.1',
-    packages=['sphinx-reafferent'],
+    packages=['sphinx-pigweed'],
     package_data={
-        'sphinx-reafferent': [
-            'static/sphinx-reafferent.css',
+        'sphinx-pigweed': [
+            'static/sphinx-pigweed.css',
         ],
     },
     # install_requires=install_requires(),
